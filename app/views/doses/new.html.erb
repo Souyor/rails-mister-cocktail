@@ -1,10 +1,11 @@
 <%= simple_form_for([@cocktail, @dose]) do |f| %>
 
-  <%= f.association :ingredient %>
-
   <%= f.input :description %>
+
+  <%= f.association :ingredient %>
 
   <%= f.submit %>
 
 <% end %>
 
+<!-- put this form inside the show, remove the new route and method -->
